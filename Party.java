@@ -9,11 +9,11 @@ class Party {
         Button c = new Button("Shoot me");
         Panel p = new Panel();
         p.add(l);
-        p.add(b); // Adiciona o botão "You bet"
-        p.add(c); // Adiciona o botão "Shoot me"
-        f.add(p); // Adiciona o painel ao frame
-        f.setSize(300, 200); // Define o tamanho da janela
-        f.setVisible(true); // Torna a janela visível
+        p.add(b);
+        p.add(c);
+        f.add(p); 
+        f.setSize(300, 200); 
+        f.setVisible(true); 
 
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -27,7 +27,6 @@ class Party {
             }
         });
 
-        // Fecha a janela ao clicar no X
         f.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 f.dispose();
